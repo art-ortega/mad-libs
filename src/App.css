@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+background: #642B73;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.wrapper {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.triangle-canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.triangle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 15;
+    transform-origin: center center;
+    animation: triangle-animation 10s linear infinite;
+}
+
+.triangle-1 {
+    animation-delay: 0s;
+}
+.triangle-2 {
+    animation-delay: -0.5s;
+}
+.triangle-3 {
+    animation-delay: -1s;
+}
+.triangle-4 {
+    animation-delay: -1.5s;
+}
+.triangle-5 {
+    animation-delay: -2s;
+}
+.triangle-6 {
+    animation-delay: -2.5s;
+}
+.triangle-7 {
+    animation-delay: -3s;
+}
+.triangle-8 {
+    animation-delay: -3.5s;
+}
+.triangle-9 {
+    animation-delay: -4s;
+}
+.triangle-10 {
+    animation-delay: -4.5s;
+}
+.triangle-11 {
+    animation-delay: -5s;
+}
+.triangle-12 {
+    animation-delay: -5.5s;
+}
+.triangle-13 {
+    animation-delay: -6s;
+}
+.triangle-14 {
+    animation-delay: -6.5s;
+}
+.triangle-15 {
+    animation-delay: -7s;
+}
+.triangle-16 {
+    animation-delay: -7.5s;
+}
+.triangle-17 {
+    animation-delay: -8s;
+}
+.triangle-18 {
+    animation-delay: -8.5s;
+}
+.triangle-19 {
+    animation-delay: -9s;
+}
+.triangle-20 {
+    animation-delay: -9.5s;
+}
+
+@keyframes triangle-animation{
+    0%{
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(3) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+.app-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+input {
+    margin-left: 20px;
+    margin-top:5px;
+    border-style: solid 1px;
+    border-radius: 2px 5px;
+    box-shadow: 1px 2px black;
+    width: 150px;
+}
+.story {
+    margin: 40px 10px 5px 100px;
+    max-width: 500px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+button {
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 100px;
+    box-shadow: 2px 2px black;
+}
+
+button:hover{
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 1s ease infinite;
+  border-radius: 100px;
+}
+
+h1.rainbow-text{
+    background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+  text-align: center;
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 10s ease infinite;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-shadow: 2px 1px 2px black;
+}
+
+@keyframes rainbow {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
